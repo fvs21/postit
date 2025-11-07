@@ -1,3 +1,5 @@
 # Práctica 1
 
-Post it
+Aplicación postit
+
+Fabrizio Vanzani
