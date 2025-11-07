@@ -16,7 +16,6 @@ const NoteScreen = () => {
   const [modalVisible, setModalVisible] = useState(false)
   const [newNote, setNewNote] = useState('')
 
-  //Creamos la funcion addNewNote
   const addNewNote = () => {
     if(newNote.trim() === '') return
 
@@ -31,7 +30,6 @@ const NoteScreen = () => {
 
   return (
     <View style={styles.container}>
-      {/* FLATLIST */ }
       <NoteList notes={notes} />
 
       <TouchableOpacity 
@@ -41,7 +39,6 @@ const NoteScreen = () => {
         <Text style={styles.addButtonText}>Agregar</Text>
       </TouchableOpacity>
 
-      {/* Creamos la ventana Modal */} 
       <AddNoteModal 
         modalVisible={modalVisible}
         setModalVisible={setModalVisible}
